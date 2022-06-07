@@ -75,7 +75,7 @@ On souhaite simplement enlever tous les espaces (les "blancs", code ascii 32) in
 
 Les contraintes sont les suivantes :
 
-- votre algorithme doit être écrit dans l'un des langages suivants au choix : java, C ou Python
+- votre algorithme doit être écrit dans l'un des langages suivants au choix : java, C, Python, ou en Scratch (pour le groupe 3)
 - il doit permettre à l'un des 3 programmes principaux fournis (java, C ou Python) de fonctionner (respect donc des noms de classes, méthodes ou fonctions en conséquence)
 
 Vu qu'il existe de nombreuses façons de résoudre ce problème, vous devrez indiquer la principale qualité de votre algorithme en précisant dans quelle catégorie vous concourrez :

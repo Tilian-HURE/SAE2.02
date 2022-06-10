@@ -3,11 +3,12 @@ package eraser;
 
 public class Main {
 
+    /**
+     * Main function.
+     * @param args
+     */
     public static void main(String[] args) {
-        if (args.length == 0) {
-            System.out.println("TEST : " + Eraser.erase("test test  test    test"));
-        }
-        //System.out.println(Eraser.erase(args[1]));
+        System.out.println(Eraser.erase(args[1]));
     }
 
 }

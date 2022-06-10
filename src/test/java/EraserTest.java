@@ -1,10 +1,11 @@
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import org.junit.runners.JUnit4;
-
 import eraser.Eraser;
 
+
 public class EraserTest {
+
     @Test
     public void testSolution() {
         assertEquals("666,thenumberofthebeast", Eraser.erase("666, the number of the beast"));
@@ -13,4 +14,5 @@ public class EraserTest {
         assertEquals("Coucou  JM  B", Eraser.erase("Cou cou  J M  B"));
         assertEquals("", Eraser.erase(""));
     }
+
 }

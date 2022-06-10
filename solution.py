@@ -7,8 +7,9 @@ def erase(text):
     """
     listedText = list(text)
     for i, char in enumerate(listedText):
-        tailleText = len(listedText)
-        if (char == " " and tailleText == 1) or (char == " "
-          and listedText[max(i-1, int(tailleText > 1))] != " " and listedText[min(i+1, tailleText-int(tailleText > 1)*2)] != " "):
+        textSize = len(listedText)
+        if (char == " " and textSize == 1) or (char == " "
+          and listedText[max(i-1, int(textSize > 1))] != " "
+          and listedText[min(i+1, textSize-int(textSize > 1)*2)] != " "):
             del listedText[i]
     return "".join(char for char in listedText)

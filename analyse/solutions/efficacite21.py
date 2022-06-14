@@ -1,8 +1,6 @@
 import string
 
-compteur  = 0 # compte le nombre de comparaisons (if)
 def erase(message: string):
-    global compteur
 
     '''
         Author       : xxx Anonymized by JMB xxx

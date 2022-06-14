@@ -1,4 +1,6 @@
-from solution import erase
+import sys
+sys.path.append('analyse/solutions/') # import python files from path 'analyse/solutions'
+from efficacite21 import erase
 import codewars_test as test
 
 

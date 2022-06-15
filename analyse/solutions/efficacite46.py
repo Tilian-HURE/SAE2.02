@@ -1,5 +1,5 @@
  # return string without spaces
-def erase2(cc):
+def erase(cc):
     chaine = ""
     for i in range(len(cc)):
         if i == len(cc) - 1 and cc[i] == " ":

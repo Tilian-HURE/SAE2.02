@@ -29,9 +29,19 @@ En cas d'ex-aequo, même note. (5/5/3/2 par exemple).
 
 == Efficacité n°21 (python)
 
+*NOTATION*
+|===
+|*1* point|_L'algo ne passe pas tous les tests fournis._
+|===
+
+
 === Prérequis
 [.text-justify]
-Remplacer la première ligne du fichier ``test.py`` par le code suivant : +
+Vérifier la présence du fichier ``efficacite21.py`` dans le répertoire ``~/analyse/solutions``. +
+ +
+
+[.text-justify]
+Remplacer les premières ligne du fichier ``test.py`` (juste au-dessus de du commentaire "Past above") par le code suivant : +
 
 [SOURCE, python]
 ----
@@ -53,7 +63,7 @@ Le fichier ``testAnalyse.py`` du répertoire ``testAnalyse`` permet d'obtenir le
 Lancer le code de ``test.py``, le programme devrait s'exécuter même si une erreur de compilation est relevée dans la close donnée dans les prérequis. Vérifier que le programme traite de tous les cas donnés.
 
 [.text-justify]
-Lancer le code de ``testAnalyse.py``, le programme devrait s'exécuter même si une erreur de compilation est relevée. Analyser les temps d'exécution en fonction des différentes tailles des chaînes de caractères.
+Lancer le code de ``testAnalyse.py``, le programme devrait s'exécuter même si une erreur de compilation est relevée. Analyser les temps d'exécution en fonction des différentes tailles des chaînes de caractères pour la partie "TEST DU PROGRAMME efficacite21".
 
 
 === Analyse de l'Efficacité
@@ -92,4 +102,84 @@ Les temps d'exécutions analysés via le programme ``testAnalyse.py`` semblent �
 
 
 ==== Complexité
-La complexité du programme ``efficacite21`` semble dépendre du nombre d'espaces dans la chaîne donnée. Elle semble se rapprocher le plus de de quelque chose comme *O(10^log(n/k))* avec k proche de 10.
+La complexité du programme ``efficacite21`` semble dépendre du nombre d'espaces dans la chaîne donnée. Elle semble se rapprocher le plus de quelque chose comme *O(k^log(n/k))* avec k étant proche de 10.
+
+
+{empty} +
+
+== Efficacité n°46 (python)
+
+*NOTATION*
+|===
+|*1* point|_L'algo ne passe pas tous les tests fournis._
+|===
+
+
+=== Prérequis
+[.text-justify]
+Vérifier la présence du fichier ``efficacite46.py`` dans le répertoire ``~/analyse/solutions`` et remplacer le nom de la fonction ``erase2`` à la ligne 2 par ``erase`` pour faciliter la suite des tests. +
+ +
+
+[.text-justify]
+Remplacer les premières ligne du fichier ``test.py`` (juste au-dessus de du commentaire "Past above") par le code suivant : +
+
+[SOURCE, python]
+----
+import sys
+sys.path.append('analyse/solutions/') # import python files from path 'analyse/solutions'
+from efficacite46 import erase
+----
+
+[.text-jutify]
+Il permet de vérifier que le programme traite bien tous les cas donnés. +
+ +
+
+[.text-justify]
+Le fichier ``testAnalyse.py`` du répertoire ``testAnalyse`` permet d'obtenir les temps d'exécutions du programme en fonction de chaînes générées aléatoirement de tailles données.
+
+
+=== Reproductibilité
+[.text-justify]
+Lancer le code de ``test.py``, le programme devrait s'exécuter même si une erreur de compilation est relevée dans la close donnée dans les prérequis. Vérifier que le programme traite de tous les cas donnés.
+
+[.text-justify]
+Lancer le code de ``testAnalyse.py``, le programme devrait s'exécuter même si une erreur de compilation est relevée. Analyser les temps d'exécution en fonction des différentes tailles des chaînes de caractères pour la partie "TEST DU PROGRAMME efficacite46".
+
+
+=== Analyse de l'Efficacité
+[.text-justify]
+L'efficacité d'un programme peut se déterminer en fonction de sa complexité et de son temps d'exécution pour différents cas le concernant (des chaînes de caractères de tailles différentes dans le cadre du problème donné pour cette SAE).
+
+==== Tests
+[.text-justify]
+[red]#*Ce programme ne passe pas tous les tests !*# +
+ +
+
+Les espaces ont été remplacés par le caractère ``_``.
+
+|===
+|*Chaînes de caractères de tests*|*Résultats*
+|``''`` (vide)|Test passed
+|``'06___07_65_19_70_'``|Test passed
+|``'666,_the_number_of_the_beast'``|Test passed
+|``'Cou_cou\__J_M__B'``|Test passed
+|``'_'``|Test passed
+|``'__'``|[red]#❌# ``'\_' should equal '__'``
+|===
+
+
+==== Temps d'exécution
+[.text-justify]
+Les temps d'exécutions analysés via le programme ``testAnalyse.py`` semblent être inconstants et dépendre surtout du nombre et du placement des espaces contenus dans les chaînes de caractère données.
+
+|===
+|*Tailles des chaînes*|*Temps d'exécution*
+|1 caractères|~0.5 ms
+|10 caractères|~1 ms
+|100 caractères|~2.5 ms
+|1000 caractères|~25 ms
+|===
+
+
+==== Complexité
+La complexité du programme ``efficacite46`` semble dépendre du nombre d'espaces dans la chaîne donnée. Elle semble se rapprocher le plus de quelque chose comme *O(k^log(n/k))* avec k étant proche de 10.

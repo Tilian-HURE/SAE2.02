@@ -1,6 +1,6 @@
-package main.java.eraser;
+package solutions;
 
-public class Efficace {
+public class efficacite29 {
 	// Efficacité
 	public static String erase(String str) {
 		int start = str.indexOf(" ");

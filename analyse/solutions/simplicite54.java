@@ -1,6 +1,6 @@
-package eraser;
+package solutions;
 
-public class Eraser {
+public class simplicite54 {
     public static String erase(String str) {
         throw new UnsupportedOperationException("Unimplemented");
         char[] temp= str.toCharArray();

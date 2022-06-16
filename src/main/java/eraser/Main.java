@@ -1,4 +1,4 @@
-package eraser;
+package main.java.eraser;
 
 
 public class Main {

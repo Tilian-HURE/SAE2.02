@@ -1,4 +1,4 @@
-package solutions;
+package analyse.solutions;
 
 public class efficacite29 {
 	// Efficacité

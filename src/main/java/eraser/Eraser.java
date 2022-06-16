@@ -1,4 +1,4 @@
-package eraser;
+package main.java.eraser;
 
 
 import static java.lang.Math.max;

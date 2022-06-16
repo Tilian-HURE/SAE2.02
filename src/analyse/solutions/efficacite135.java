@@ -1,8 +1,6 @@
-package eraser;
+package analyse.solutions;
 
-import java.lang.reflect.Field;
-
-public class Eraser {
+public class efficacite135 {
 
     public static String erase(String str) {
         String result = "";

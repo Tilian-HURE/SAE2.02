@@ -1,0 +1,1 @@
+Les fichiers et autres ressources nécessaires à l'analyse des programmes Java se trouvent directement dans le répertoire ``~/src/analyse``.

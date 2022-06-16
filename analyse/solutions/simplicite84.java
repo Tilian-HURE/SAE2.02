@@ -1,4 +1,4 @@
-package eraser;
+package solutions;
 
 public class Eraser {
 

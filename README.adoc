@@ -152,9 +152,9 @@ Vous utiliserez le dépôt initial qui vous aura été attribué via classroom p
 
 WARNING: Les répertoires et fichiers existants devront être complétés et mis à jour sans être renommés. Les binaires de compilation (répertoire `bin` par exemple) ne devront pas être poussés sur le dépôt.
 
-=== Pré-requis
+=== Prérequis
 
-Les pré-requis nécessaires pour l'analyse de chaque solutions sont indiqués dans ce https://github.com/IUT-Blagnac/sae2-02-Tilian-HURE/blob/main/rapport/Rapport%20_de_comparaison.adoc[rapport de comparaison].
+Les prérequis nécessaires pour l'analyse de chaque solutions sont indiqués dans ce https://github.com/IUT-Blagnac/sae2-02-Tilian-HURE/blob/main/rapport/Rapport%20_de_comparaison.adoc[rapport de comparaison].
 
 ////
 - Java v.x.y.z
@@ -174,8 +174,11 @@ Les étapes nécessaires à la reproductibilité des tests pour l'analyse de cha
 
 === Références
 
+- https://app.codacy.com/[Codacy] pour l'analyse qualitative de programmes
+////
 - link:http://xyz[Mon super outil XYZ]
 - ...
+////
 
 == Généralités, notation de la SAÉ et résultat du concours
 

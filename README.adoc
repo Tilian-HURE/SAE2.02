@@ -175,6 +175,7 @@ Les étapes nécessaires à la reproductibilité des tests pour l'analyse de cha
 === Références
 
 - https://app.codacy.com/[Codacy] pour l'analyse qualitative de programmes
+
 ////
 - link:http://xyz[Mon super outil XYZ]
 - ...

@@ -154,15 +154,23 @@ WARNING: Les répertoires et fichiers existants devront être complétés et mis
 
 === Pré-requis
 
+Les pré-requis nécessaires pour l'analyse de chaque solutions sont indiqués dans ce https://github.com/IUT-Blagnac/sae2-02-Tilian-HURE/blob/main/rapport/Rapport%20_de_comparaison.adoc[rapport de comparaison].
+
+////
 - Java v.x.y.z
 - ...
+////
 
 === Reproductibilité
 
+Les étapes nécessaires à la reproductibilité des tests pour l'analyse de chaque solutions sont indiquées dans ce https://github.com/IUT-Blagnac/sae2-02-Tilian-HURE/blob/main/rapport/Rapport%20_de_comparaison.adoc[rapport de comparaison].
+
+////
 - Pour reproduire mon analyse :
 . Installez X
 . Lancez Y
 . ...
+////
 
 === Références
 

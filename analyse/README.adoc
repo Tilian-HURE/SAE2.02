@@ -1,1 +1,1 @@
-Les fichiers et autres ressources nécessaires à l'analyse des programmes Java se trouvent directement dans le répertoire ``~/src/analyse``.
+Les fichiers et autres ressources nécessaires à l'analyse des programmes Java se trouvent directement dans le répertoire ``~/src/analyse`` (https://github.com/IUT-Blagnac/sae2-02-Tilian-HURE/tree/main/src/analyse[ici]).

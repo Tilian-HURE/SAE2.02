@@ -1,5 +1,6 @@
 import sys
 sys.path.append('solutions/') # import python files from path 'analyse/solutions'
+print(sys.setrecursionlimit(50000)) # set max recursion depth to 50000
 from support import random_spaced_string
 import codewars_test as test
 
@@ -28,6 +29,11 @@ def sample_tests():
         string = random_spaced_string(1000)
         test.assert_equals(efficacite21.erase(string), efficacite21.erase(string))
 
+    @test.it("Chaîne de taille 10000")
+    def test5():
+        string = random_spaced_string(10000)
+        test.assert_equals(efficacite21.erase(string), efficacite21.erase(string))
+
 
 # efficacite-46 :
 import efficacite46
@@ -51,4 +57,9 @@ def sample_tests():
     @test.it("Chaîne de taille 1000")
     def test4():
         string = random_spaced_string(1000)
+        test.assert_equals(efficacite46.erase(string), efficacite46.erase(string))
+
+    @test.it("Chaîne de taille 10000")
+    def test5():
+        string = random_spaced_string(10000)
         test.assert_equals(efficacite46.erase(string), efficacite46.erase(string))

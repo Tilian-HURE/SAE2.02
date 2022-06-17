@@ -1,46 +1,57 @@
 = SAE 2.02 - Rapport de comparaison d'approches algorithmiques
 :toc:
+:toc-title: Sommaire
 :sectnums:
 
 Réalisé par *Tilian HURÉ (4A)*
 
+[WARNING]
+[.text-justify]
+Pour une meilleure lisibilité, il est recommandé d'ouvrir ce document avec un outil prenant en compte l'intégrité du markdown Asciidoc dans sa preview.
+
 
 {empty} +
-
-[NOTE]
-[.text-justify]
-Les fichiers ont été renommés afin d'enlever le caractère ``-`` qui posait problème lors de l'importation des fichiers dans certains codes d'analyse.
 
 *NOTATION*
 |===
 |*Cas*|*Points*
-|Ne compile/s'exécute pas|0
-|Ne passe pas les tests fournis ou rate certains cas|1
-|Meilleur algo de la catégorie|5
-|2nd algo|4
-|3e algo|3
-|4e algo|2
+|Ne se compile/s'exécute pas|0
+|Ne passe pas les tests fournis ou rate certains cas|-1
+|Meilleur algo de la catégorie|+5
+|2nd algo|+4
+|3e algo|+3
+|4e algo|+2
 |===
-En cas d'ex-aequo, même note. (5/5/3/2 par exemple).
+
+[NOTE]
+[.text-justify]
+Les fichiers ont été renommés afin d'enlever le caractère ``-`` qui posait problème lors de leur importation dans certains codes d'analyse.
+
+{empty} +
 
 
 
 == Catégorie SIMPLICITÉ
 
-=== Simplicité n°29 (java)
+=== Simplicité n°84 (java)
 
 *NOTATION*
 |===
-|*5* points|*_Meilleur algorithme* de la catégorie (le plus rapide et passant tous les tests)._ *TODO*
+|*+5* points|*_Meilleur algorithme* de la catégorie (très léger, lisible, bonne qualité et passant tous les tests)._
+|*Total : 5* points|
 |===
 
 [.text-justify]
-Cet algorithme présente une efficacité satisfaisante en traitant tous les cas, avec des temps d'exécution rapides et une complexité qualifiable de linéaire. *TODO*
+Difficile de ne pas craquer avec cet algorithme présentant une très bonne qualité en étant très épuré, léger, le rendant très simple à comprendre, tout en traitant tous les cas de chaînes de caractères.
 
 
 ==== Prérequis
+[.text.justify]
+Votre IDE doit être paramétré avec au minimum une JDK version 18. +
+ +
+
 [.text-justify]
-Vérifier la présence du fichier ``simplicite54.java`` dans le répertoire ``~/src/analyse/solutions``. +
+Vérifier la présence du fichier ``simplicite84.java`` dans le répertoire ``~/src/analyse/solutions``. +
  +
 
 [.text-justify]
@@ -48,11 +59,11 @@ Remplacer la ligne n°7 du fichier ``EraserTest.java`` (celle avec le commentair
 
 [SOURCE, java]
 ----
-import analyse.solutions.simplicite54;
+import analyse.solutions.simplicite84;
 ----
 
 [.text-justify]
-Et remplacer toutes les notations ``Eraser`` du fichier par ``simplicite54``.
+Et remplacer toutes les notations ``Eraser`` du fichier par ``simplicite84``.
 
 [.text-jutify]
 Ce programme permet de vérifier que le programme traite bien tous les cas donnés.
@@ -60,7 +71,11 @@ Ce programme permet de vérifier que le programme traite bien tous les cas donn�
 
 ==== Reproductibilité
 [.text-justify]
-Lancer le code de ``EraserTest.java``et vérifier que le programme traite tous les cas donnés.
+Lancer le code de ``EraserTest.java``et vérifier que le programme traite tous les cas donnés. +
+ +
+
+[.text-justify]
+Paramètrer 'Codacy' avec ce repository Github et analyser les remarques à propos du fichier ``simplicite84.java``.
 
 
 ==== Analyse de la simplicité
@@ -90,6 +105,267 @@ La lisibilité est la facilité à lire et comprendre ce que le programme fait. 
 
 |===
 |*Points positifs*|*Points négatifs*
+|[green]#✔️# Très très grande légereté du code|[red]#❌# Manque de documentation (javadoc)
+|[green]#✔️# Chaque ligne est claire et compréhensible|
+|[green]#✔️# Utilisation de méthodes très simples (``for``, ``if``)|
+|===
+
+
+===== Qualité
+L'outil en ligne Codacy a noté ce programme [green]#*B*#. Cela est seulement dû au fait que le nom de la classe java ne commence pas par une majuscule, aucune autre remarque n'est relevée ce qui laisse prétendre que le code présente une très bonne qualité.
+
+
+{empty} +
+
+=== Simplicité n°98 (java)
+
+*NOTATION*
+|===
+|*+4* points|*_2e meilleur algorithme* de la catégorie (bonne lisibilité, très bonne qualité et passant tous les tests)._
+|*Total : 4* points|
+|===
+
+[.text-justify]
+Cet algorithme présente une très bonne qualité en étant facile à comprendre avec des méthodes java simples, un documentation javadoc explicite et en traitant tous les cas de chaînes de caractères possibles.
+
+
+==== Prérequis
+[.text.justify]
+Votre IDE doit être paramétré avec au minimum une JDK version 18. +
+ +
+
+[.text-justify]
+Vérifier la présence du fichier ``simplicite98.java`` dans le répertoire ``~/src/analyse/solutions``. +
+ +
+
+[.text-justify]
+Remplacer la ligne n°7 du fichier ``EraserTest.java`` (celle avec le commentaire "replace this line") du répertoire ``~/src/test/java`` par le code suivant : +
+
+[SOURCE, java]
+----
+import analyse.solutions.simplicite98;
+----
+
+[.text-justify]
+Et remplacer toutes les notations ``Eraser`` du fichier par ``simplicite98``.
+
+[.text-jutify]
+Ce programme permet de vérifier que le programme traite bien tous les cas donnés.
+
+
+==== Reproductibilité
+[.text-justify]
+Lancer le code de ``EraserTest.java``et vérifier que le programme traite tous les cas donnés. +
+ +
+
+[.text-justify]
+Paramètrer 'Codacy' avec ce repository Github et analyser les remarques à propos du fichier ``simplicite98.java``.
+
+
+==== Analyse de la simplicité
+[.text-justify]
+La simplicité d'un programme peut se déduire à partir de sa lisibilité/compréhension qui sera évaluée subjectivement pour ce rapport, et de sa qualité qui sera évaluée avec l'outil en ligne 'Codacy'. Il reste tout de même nécessaire de vérifier si le programme répond bien à sa tâche en traitant tous les cas pour les chaînes de caractères données.
+
+===== Tests
+[WARNING]
+L'algorithme ``simplicite98`` propose deux fonctions ``erase`` mais la deuxième étant moins performante que la première, elle ne sera pas prise en compte pour les analyses suivantes.
+
+[.text-justify]
+[green]#*Ce programme passe tous les tests.*#
+
+Les espaces ont été remplacés par le caractère ``_``.
+
+|===
+|*Chaînes de caractères de tests*|*Résultats*
+|``''`` (vide)|Test passed
+|``'06___07_65_19_70_'``|Test passed
+|``'666,_the_number_of_the_beast'``|Test passed
+|``'Cou_cou\__J_M__B'``|Test passed
+|``'_'``|Test passed
+|``'__'``|Test passed
+|===
+
+
+===== Lisibilité
+[.text-justify]
+La lisibilité est la facilité à lire et comprendre ce que le programme fait. Pour cela certains critères vont être pris en compte comme l'aération du code, le nom des variables, les commentaires, la documentation, etc.
+
+|===
+|*Points positifs*|*Points négatifs*
+|[green]#✔️# Présence de documentation (javadoc)|
+|[green]#✔️# Utilisation de méthodes très simples (``for``, ``if``)|
+|===
+
+
+===== Qualité
+L'outil en ligne Codacy a noté ce programme [green]#*A*#, le code présente donc une très bonne qualité.
+
+
+{empty} +
+
+=== Simplicité n°71 (java)
+
+*NOTATION*
+|===
+|*+3* points|*_3e meilleur algorithme* de la catégorie (très léger, lisible, bonne qualité)._
+|[red]#*-1* points#|_L’algo ne passe pas tous les tests fournis._
+|*Total : 2* points|
+|===
+
+[.text-justify]
+Cet algorithme présente une très bonne qualité en étant très épuré, léger, le rendant très simple à comprendre. Cependant, il semblerait que son auteur ait omis de tester son code du fait que ce dernier ne traite pas une grande partie des cas de chaînes de caractères possibles en recontrant des erreurs d'exécution.
+
+
+==== Prérequis
+[.text.justify]
+Votre IDE doit être paramétré avec au minimum une JDK version 18. +
+ +
+
+[.text-justify]
+Vérifier la présence du fichier ``simplicite71.java`` dans le répertoire ``~/src/analyse/solutions``. +
+ +
+
+[.text-justify]
+Remplacer la ligne n°7 du fichier ``EraserTest.java`` (celle avec le commentaire "replace this line") du répertoire ``~/src/test/java`` par le code suivant : +
+
+[SOURCE, java]
+----
+import analyse.solutions.simplicite71;
+----
+
+[.text-justify]
+Et remplacer toutes les notations ``Eraser`` du fichier par ``simplicite71``.
+
+[.text-jutify]
+Ce programme permet de vérifier que le programme traite bien tous les cas donnés.
+
+
+==== Reproductibilité
+[.text-justify]
+Lancer le code de ``EraserTest.java``et vérifier que le programme traite tous les cas donnés. +
+ +
+
+[.text-justify]
+Paramètrer 'Codacy' avec ce repository Github et analyser les remarques à propos du fichier ``simplicite71.java``.
+
+
+==== Analyse de la simplicité
+[.text-justify]
+La simplicité d'un programme peut se déduire à partir de sa lisibilité/compréhension qui sera évaluée subjectivement pour ce rapport, et de sa qualité qui sera évaluée avec l'outil en ligne 'Codacy'. Il reste tout de même nécessaire de vérifier si le programme répond bien à sa tâche en traitant tous les cas pour les chaînes de caractères données.
+
+===== Tests
+[.text-justify]
+[red]#*Ce programme ne passe pas tous les tests.*#
+
+Les espaces ont été remplacés par le caractère ``_``.
+
+|===
+|*Chaînes de caractères de tests*|*Résultats*
+|``''`` (vide)|Test passed
+|``'06___07_65_19_70_'``|[red]#❌# Erreur d'exécution (``index out of bound``)
+|``'666,_the_number_of_the_beast'``|Test passed
+|``'Cou_cou\__J_M__B'``|Test passed
+|``'_'``|[red]#❌# Erreur d'exécution (``index out of bound``)
+|``'__'``|[red]#❌# Erreur d'exécution (``index out of bound``)
+|===
+
+
+===== Lisibilité
+[.text-justify]
+La lisibilité est la facilité à lire et comprendre ce que le programme fait. Pour cela certains critères vont être pris en compte comme l'aération du code, le nom des variables, les commentaires, la documentation, etc.
+
+|===
+|*Points positifs*|*Points négatifs*
+|[green]#✔️# Très très grande légereté du code|[red]#❌# Manque de documentation (javadoc)
+|[green]#✔️# Chaque ligne est claire et compréhensible|[red]#❌# Noms de variables implicites (``res``)
+|[green]#✔️# Utilisation de méthodes très simples (``for``, ``if``)|
+|===
+
+
+===== Qualité
+L'outil en ligne Codacy a noté ce programme [green]#*B*#. Cela est seulement dû au fait que le nom de la classe java ne commence pas par une majuscule, aucune autre remarque n'est relevée ce qui laisse prétendre que le code présente une très bonne qualité.
+
+
+{empty} +
+
+=== Simplicité n°54 (java)
+
+*NOTATION*
+|===
+|*+4* points|*_4e (et dernier) meilleur algorithme* de la catégorie (qualité moyenne, assez lisible)._
+|[red]#*-1* points#|_L’algo ne passe pas tous les tests fournis._
+|[red]#*-1* points#|_L’algo contient plusieurs oublis nuisant à sa compilation._
+|*Total : 2* points|
+|===
+
+[.text-justify]
+Cet algorithme laisse penser qu'il n'a même pas été testé par son auteur avec certains oublis résultant en des erreurs de compilation. Même correctement compilé, le code ne traite ps tous les cas de chaînes de caractères. Bien qu'il présente une qualité très moyenne à cause de clauses java mal utilisées, il reste tout de même assez simple à comprendre en utilisant des méthodes java classiques et en étant décomposés en plusieurs parties.
+
+
+==== Prérequis
+[.text.justify]
+Votre IDE doit être paramétré avec au minimum une JDK version 18. +
+ +
+
+[.text-justify]
+Vérifier la présence du fichier ``simplicite54.java`` dans le répertoire ``~/src/analyse/solutions``. +
+ +
+
+[.text-justify]
+Remplacer la ligne n°7 du fichier ``EraserTest.java`` (celle avec le commentaire "replace this line") du répertoire ``~/src/test/java`` par le code suivant : +
+
+[SOURCE, java]
+----
+import analyse.solutions.simplicite54;
+----
+
+[.text-justify]
+Et remplacer toutes les notations ``Eraser`` du fichier par ``simplicite54``.
+
+[.text-jutify]
+Ce programme permet de vérifier que le programme traite bien tous les cas donnés.
+
+
+==== Reproductibilité
+[.text-justify]
+Lancer le code de ``EraserTest.java``et vérifier que le programme traite tous les cas donnés. +
+ +
+
+[.text-justify]
+Paramètrer 'Codacy' avec ce repository Github et analyser les remarques à propos du fichier ``simplicite54.java``.
+
+
+==== Analyse de la simplicité
+[.text-justify]
+La simplicité d'un programme peut se déduire à partir de sa lisibilité/compréhension qui sera évaluée subjectivement pour ce rapport, et de sa qualité qui sera évaluée avec l'outil en ligne 'Codacy'. Il reste tout de même nécessaire de vérifier si le programme répond bien à sa tâche en traitant tous les cas pour les chaînes de caractères données.
+
+===== Tests
+[WARNING]
+[.text-justify]
+L'auteur de ce programme n'a probablement pas testé son travail, non seulement car il a oublié l'importation de la classe ``ArrayList`` mais surtout car il a laissé une clause ``throw new Exception`` à la première ligne de sa fonction rendant tout le reste du code inatteignable. _Ces oublis seront ignorés afin de tout de même tester la fonctionnalité du programme._
+
+[.text-justify]
+[red]#*Ce programme ne passe pas tous les tests.*#
+
+Les espaces ont été remplacés par le caractère ``_``.
+
+|===
+|*Chaînes de caractères de tests*|*Résultats*
+|``''`` (vide)|Test passed
+|``'06___07_65_19_70_'``|Test passed
+|``'666,_the_number_of_the_beast'``|Test passed
+|``'Cou_cou\__J_M__B'``|Test passed
+|``'_'``|[red]#❌# Erreur d'exécution (``index out of bound``)
+|``'__'``|Test passed
+|===
+
+
+===== Lisibilité
+[.text-justify]
+La lisibilité est la facilité à lire et comprendre ce que le programme fait. Pour cela certains critères vont être pris en compte comme l'aération du code, le nom des variables, les commentaires, la documentation, etc.
+
+|===
+|*Points positifs*|*Points négatifs*
 |[green]#✔️# Décomposition (aération) du code|[red]#❌# Manque de documentation (javadoc)
 |[green]#✔️# Utilisation de méthodes facilement compréhensibles (``for``, ``ArrayList``, ``StringBuilder``)|[red]#❌# Manque de commentaires explicatifs
 ||[red]#❌# Noms de variables implicites (``temp``, ``temp1``)
@@ -106,9 +382,6 @@ L'outil en ligne Codacy a noté ce programme [yellow]#*D*#. Cela est principalem
 |===
 
 
-*TOCONTINUE*
-
-
 
 == Catégorie EFFICACITÉ
 
@@ -116,7 +389,8 @@ L'outil en ligne Codacy a noté ce programme [yellow]#*D*#. Cela est principalem
 
 *NOTATION*
 |===
-|*5* points|*_Meilleur algorithme* de la catégorie (le plus rapide et passant tous les tests)._
+|*+5* points|*_Meilleur algorithme* de la catégorie (le plus rapide et passant tous les tests)._
+|*Total : 5* points|
 |===
 
 [.text-justify]
@@ -124,6 +398,10 @@ Cet algorithme présente une efficacité satisfaisante en traitant tous les cas,
 
 
 ==== Prérequis
+[.text.justify]
+Votre IDE doit être paramétré avec au minimum une JDK version 18. +
+ +
+
 [.text-justify]
 Vérifier la présence du fichier ``efficacite29.java`` dans le répertoire ``~/src/analyse/solutions``. +
  +
@@ -178,19 +456,21 @@ Les espaces ont été remplacés par le caractère ``_``.
 
 ===== Temps d'exécution
 [.text-justify]
-Les temps d'exécution analysés via le programme ``testAnalyse.py`` (en milli-secondes) semblent être inconstants et dépendent surtout du nombre et du placement des espaces contenus dans les chaînes de caractère données. _Cependant, on remarque comme phénomène particulier, que le programme à tendance à prend plus de temps lorsque la chaîne se limite à seulement 1 caractère._
+Les temps d'exécution analysés via le programme ``testAnalyse.py`` (en millisecondes) semblent être inconstants et dépendent surtout du nombre et du placement des espaces contenus dans les chaînes de caractère données.
 
 |===
 |*Tailles des chaînes*|*Temps d'exécution*
-|1 caractères|~1.2 ms
-|10 caractères|~0.05 ms
-|100 caractères|~0.2 ms
-|1000 caractères|~1 ms
+|1 caractère|~0.02 ms
+|10 caractères|~0.02 ms
+|100 caractères|~0.1 ms
+|1000 caractères|~1.2 ms
+|10000 caractères|~20 ms
 |===
 
 
 ===== Complexité
-La complexité du programme ``efficacite29.java`` semble se rapprocher de *O(kn)* (avec k étant un nombre réel), les temps d'exécution évoluant de manière linéaire en fonction de la taille des chaînes données. Déterminer une complexité plus précise nécessiterait d'autres paramètres comme le nombre d'espace dans la chaîne ainsi que leur disposition.
+[.text-justify]
+La complexité du programme ``efficacite29.java`` semble se rapprocher de *O(kn)* (avec k étant un nombre réel proche de 10), les temps d'exécution évoluant de manière linéaire en fonction de la taille des chaînes données. Déterminer une complexité plus précise nécessiterait d'autres paramètres comme le nombre d'espace dans la chaîne ainsi que leur disposition.
 
 
 {empty} +
@@ -199,14 +479,19 @@ La complexité du programme ``efficacite29.java`` semble se rapprocher de *O(kn)
 
 *NOTATION*
 |===
-|*4* points|*_2nd meilleur algorithme* de la catégorie (rapide et passant tous les tests)_
+|*+4* points|*_2nd meilleur algorithme* de la catégorie (rapide et passant tous les tests)_
+|*Total : 4* points|
 |===
 
 [.text-justify]
-Cet algorithme présente une efficacité satisfaisante en traitant tous les cas, avec des temps d'exécution rapides et une complexité qualifiable de linéaire. *TODO*
+Cet algorithme présente une efficacité satisfaisante en traitant tous les cas, avec des temps d'exécution rapides et une complexité qualifiable de linéaire.
 
 
 ==== Prérequis
+[.text.justify]
+Votre IDE doit être paramétré avec au minimum une JDK version 18. +
+ +
+
 [.text-justify]
 Vérifier la présence du fichier ``efficacite135.java`` dans le répertoire ``~/src/analyse/solutions``. +
  +
@@ -261,102 +546,21 @@ Les espaces ont été remplacés par le caractère ``_``.
 
 ===== Temps d'exécution
 [.text-justify]
-Les temps d'exécution analysés via le programme ``testAnalyse.py`` (en milli-secondes) semblent être inconstants et dépendent surtout du nombre et du placement des espaces contenus dans les chaînes de caractère données. _Cependant, on remarque comme phénomène particulier, que le programme à tendance à prend plus de temps lorsque la chaîne se limite à 10 caractères._
+Les temps d'exécution analysés via le programme ``testAnalyse.py`` (en millisecondes) semblent être inconstants et dépendent surtout du nombre et du placement des espaces contenus dans les chaînes de caractère données.
 
 |===
 |*Tailles des chaînes*|*Temps d'exécution*
-|1 caractères|~0.5 ms
-|10 caractères|~10 ms
+|1 caractère|~0.02 ms
+|10 caractères|~0.5 ms
 |100 caractères|~0.5 ms
 |1000 caractères|~2 ms
+|10000 caractères|~22 ms
 |===
 
 
 ===== Complexité
-La complexité du programme ``efficacite135.java`` semble se rapprocher de *O(kn)* (avec k étant un nombre réel), les temps d'exécution évoluant de manière linéaire en fonction de la taille des chaînes données. Déterminer une complexité plus précise nécessiterait d'autres paramètres comme le nombre d'espace dans la chaîne ainsi que leur disposition.
-
-
-{empty} +
-
-=== Efficacité n°21 (python)
-
-*NOTATION*
-|===
-|[.line-through]#*1* point#|_L'algo ne passe pas tous les tests fournis._
-|*3* points|*_3e meilleur algorithme* de la catégorie (rapide)._
-|===
-
 [.text-justify]
-Cet algorithme ne peut être réellement qualifié d'efficace car ne traitant pas tous les cas possibles de chaînes de caractères. Mais il présente tout de même une efficacité "partielle" plutôt satisfaisante avec des temps d'exécution assez rapides et une complexité qualifiable de sous-quadratique.
-
-
-==== Prérequis
-[.text-justify]
-Vérifier la présence du fichier ``efficacite21.py`` dans le répertoire ``~/analyse/solutions``. +
- +
-
-[.text-justify]
-Remplacer les premières ligne du fichier ``test.py`` (juste au-dessus de du commentaire "Past above") par le code suivant : +
-
-[SOURCE, python]
-----
-import sys
-sys.path.append('analyse/solutions/') # import python files from path 'analyse/solutions'
-from efficacite21 import erase
-----
-
-[.text-jutify]
-Il permet de vérifier que le programme traite bien tous les cas donnés. +
- +
-
-[.text-justify]
-Le fichier ``testAnalyse.py`` du répertoire ``~/analyse`` permet d'obtenir les temps d'exécution du programme en fonction de chaînes générées aléatoirement de tailles données.
-
-
-==== Reproductibilité
-[.text-justify]
-Lancer le code de ``test.py``, le programme devrait s'exécuter même si une erreur de compilation est relevée dans la close donnée dans les prérequis. Vérifier que le programme traite tous les cas donnés.
-
-[.text-justify]
-Lancer le code de ``testAnalyse.py``, le programme devrait s'exécuter même si une erreur de compilation est relevée. Analyser les temps d'exécution en fonction des différentes tailles des chaînes de caractères pour la partie "TEST DU PROGRAMME efficacite21".
-
-
-==== Analyse de l'efficacité
-[.text-justify]
-L'efficacité d'un programme peut se déterminer en fonction de sa complexité et de son temps d'exécution pour différents cas le concernant (des chaînes de caractères de tailles différentes dans le cadre du problème donné pour cette SAE).
-
-===== Tests
-[.text-justify]
-[red]#*Ce programme ne passe pas tous les tests !*#
-
-Les espaces ont été remplacés par le caractère ``_``.
-
-|===
-|*Chaînes de caractères de tests*|*Résultats*
-|``''`` (vide)|Test passed
-|``'06___07_65_19_70_'``|[red]#❌# ``'06\__07651970' should equal '06___07651970'``
-|``'666,_the_number_of_the_beast'``|Test passed
-|``'Cou_cou\__J_M__B'``|Test passed
-|``'_'``|Test passed
-|``'__'``|Test passed
-|===
-
-
-===== Temps d'exécution
-[.text-justify]
-Les temps d'exécution analysés via le programme ``testAnalyse.py`` (en milli-secondes) semblent être inconstants et dépendent surtout du nombre et du placement des espaces contenus dans les chaînes de caractère données.
-
-|===
-|*Tailles des chaînes*|*Temps d'exécution*
-|1 caractères|~0.05 ms
-|10 caractères|~0.05 ms
-|100 caractères|~0.5 ms
-|1000 caractères|~5 ms
-|===
-
-
-===== Complexité
-La complexité du programme ``efficacite21.py`` semble se rapprocher de *O(nlog(n))* car les ordres de grandeur des temps d'exécution dépendendent de ceux des tailles des chaînes données. Déterminer une complexité plus précise nécessiterait d'autres paramètres comme le nombre d'espace dans la chaîne ainsi que leur disposition.
+La complexité du programme ``efficacite135.java`` semble se rapprocher de *O(kn)* (avec k étant un nombre réel proche de 10), les temps d'exécution évoluant de manière linéaire en fonction de la taille des chaînes données. Déterminer une complexité plus précise nécessiterait d'autres paramètres comme le nombre d'espace dans la chaîne ainsi que leur disposition.
 
 
 {empty} +
@@ -365,12 +569,13 @@ La complexité du programme ``efficacite21.py`` semble se rapprocher de *O(nlog(
 
 *NOTATION*
 |===
-|[.line-through]#*1* point#|_L'algo ne passe pas tous les tests fournis._
-|*2* points|*_4e (et dernier) meilleur algorithme* de la catégorie (rapide)._
+|[red]#*-1* point#|_L'algo ne passe pas tous les tests fournis._
+|*+3* points|*_3e meilleur algorithme* de la catégorie (rapide)._
+|*Total : 2* points|
 |===
 
 [.text-justify]
-Cet algorithme ne peut être réellement qualifié d'efficace car ne traitant pas tous les cas possibles de chaînes de caractères. Mais il présente tout de même une efficacité "partielle" plutôt satisfaisante avec des temps d'exécution assez rapides et une complexité qualifiable de sous-quadratique.
+Cet algorithme ne peut être réellement qualifié d'efficace car ne traitant pas tous les cas possibles de chaînes de caractères. Mais il présente tout de même une efficacité "partielle" plutôt satisfaisante avec des temps d'exécution assez rapides et une complexité qualifiable de linéaire.
 
 
 ==== Prérequis
@@ -427,22 +632,231 @@ Les espaces ont été remplacés par le caractère ``_``.
 
 ===== Temps d'exécution
 [.text-justify]
-Les temps d'exécution analysés via le programme ``testAnalyse.py`` (en milli-secondes) semblent être inconstants et dépendent surtout du nombre et du placement des espaces contenus dans les chaînes de caractère données.
+Les temps d'exécution analysés via le programme ``testAnalyse.py`` (en millisecondes) semblent être inconstants et dépendent surtout du nombre et du placement des espaces contenus dans les chaînes de caractère données.
 
 |===
 |*Tailles des chaînes*|*Temps d'exécution*
-|1 caractères|~0.05 ms
+|1 caractère|~0.05 ms
 |10 caractères|~0.1 ms
 |100 caractères|~0.5 ms
 |1000 caractères|~5 ms
+|10000 caractères|~50 ms
 |===
 
 
 ===== Complexité
-La complexité du programme ``efficacite46.py`` semble se rapprocher de *O(nlog(n))* car les ordres de grandeur des temps d'exécution dépendendent de ceux des tailles des chaînes données. Déterminer une complexité plus précise nécessiterait d'autres paramètres comme le nombre d'espace dans la chaîne ainsi que leur disposition.
+[.text-justify]
+La complexité du programme ``efficacite46.py`` semble se rapprocher de *O(kn)* (avec k étant un nombre réel proche de 10), les temps d'exécution évoluant de manière linéaire en fonction de la taille des chaînes données. Déterminer une complexité plus précise nécessiterait d'autres paramètres comme le nombre d'espace dans la chaîne ainsi que leur disposition.
+
+
+{empty}
+
+=== Efficacité n°21 (python)
+
+*NOTATION*
+|===
+|[red]#*-1* point#|_L'algo ne passe pas tous les tests fournis._
+|[red]#*-1* point#|_L'algo est limité en terme de ressource mémoire._
+|*+2* points|*_4e (et dernier) meilleur algorithme* de la catégorie._
+|*Total : 0* points |
+|===
+
+[.text-justify]
+Cet algorithme ne peut être réellement qualifié d'efficace car ne traitant pas tous les cas possibles de chaînes de caractères et étant limité sur la taille des données traitées (surcharge mémoire due à l'utilisation de la récursivité).
+
+
+==== Prérequis
+[.text-justify]
+Vérifier la présence du fichier ``efficacite21.py`` dans le répertoire ``~/analyse/solutions``. +
+ +
+
+[.text-justify]
+Remplacer les premières ligne du fichier ``test.py`` (juste au-dessus de du commentaire "Past above") par le code suivant : +
+
+[SOURCE, python]
+----
+import sys
+sys.path.append('analyse/solutions/') # import python files from path 'analyse/solutions'
+from efficacite21 import erase
+----
+
+[.text-jutify]
+Il permet de vérifier que le programme traite bien tous les cas donnés. +
+ +
+
+[.text-justify]
+Le fichier ``testAnalyse.py`` du répertoire ``~/analyse`` permet d'obtenir les temps d'exécution du programme en fonction de chaînes générées aléatoirement de tailles données.
+
+
+==== Reproductibilité
+[.text-justify]
+Lancer le code de ``test.py``, le programme devrait s'exécuter même si une erreur de compilation est relevée dans la close donnée dans les prérequis. Vérifier que le programme traite tous les cas donnés.
+
+[.text-justify]
+Lancer le code de ``testAnalyse.py``, le programme devrait s'exécuter même si une erreur de compilation est relevée. Analyser les temps d'exécution en fonction des différentes tailles des chaînes de caractères pour la partie "TEST DU PROGRAMME efficacite21".
+
+
+==== Analyse de l'efficacité
+[.text-justify]
+L'efficacité d'un programme peut se déterminer en fonction de sa complexité et de son temps d'exécution pour différents cas le concernant (des chaînes de caractères de tailles différentes dans le cadre du problème donné pour cette SAE).
+
+===== Tests
+[.text-justify]
+[red]#*Ce programme ne passe pas tous les tests !*#
+
+Les espaces ont été remplacés par le caractère ``_``.
+
+|===
+|*Chaînes de caractères de tests*|*Résultats*
+|``''`` (vide)|Test passed
+|``'06___07_65_19_70_'``|[red]#❌# ``'06\__07651970' should equal '06___07651970'``
+|``'666,_the_number_of_the_beast'``|Test passed
+|``'Cou_cou\__J_M__B'``|Test passed
+|``'_'``|Test passed
+|``'__'``|Test passed
+|===
+
+
+===== Temps d'exécution
+[.text-justify]
+Les temps d'exécution analysés via le programme ``testAnalyse.py`` (en millisecondes) semblent être inconstants et dépendent surtout du nombre et du placement des espaces contenus dans les chaînes de caractère données.
+
+|===
+|*Tailles des chaînes*|*Temps d'exécution*
+|1 caractère|~0.05 ms
+|10 caractères|~0.05 ms
+|100 caractères|~0.5 ms
+|1000 caractères|~5 ms
+|10000 caractères|[red]#Surcharge de mémoire#
+|===
+
+*[red]#Cet algorithme est limité en taille de chaîne renseignée.#*
+
+
+===== Complexité
+[.text-justify]
+La complexité du programme ``efficacite21.py`` semble se rapprocher de *O(kn)* (avec k étant un nombre réel proche de 10), les temps d'exécution évoluant de manière linéaire en fonction de la taille des chaînes données. Déterminer une complexité plus précise nécessiterait d'autres paramètres comme le nombre d'espace dans la chaîne ainsi que leur disposition.
 
 
 
 == Catégorie SOBRIÉTÉ NUMÉRIQUE
 
-*TOCONTINUE*
+=== Sobriété n°67 (java)
+
+*NOTATION*
+|===
+|*+5* points|*_Meilleur algorithme* de la catégorie (rapide, passant tous les tests et consommant peu de ressources mémoires)._
+|*Total : 5* points|
+|===
+
+[.text-justify]
+Cet algorithme présente une efficacité satisfaisante en traitant tous les cas, avec des temps d'exécution rapides et une complexité qualifiable de logarithmique. Il semble également consommer peu de ressources, même lorsque des chaînes de caractères de très grandes tailles sont données.
+
+
+==== Prérequis
+[.text.justify]
+Votre IDE doit être paramétré avec au minimum une JDK version 18. +
+ +
+
+[.text-justify]
+Vérifier la présence du fichier ``sobriete67.java`` dans le répertoire ``~/src/analyse/solutions``. +
+ +
+
+[.text-justify]
+Remplacer la ligne n°7 du fichier ``EraserTest.java`` (celle avec le commentaire "replace this line") du répertoire ``~/src/test/java`` par le code suivant : +
+
+[SOURCE, java]
+----
+import analyse.solutions.sobriete67;
+----
+
+[.text-justify]
+Et remplacer toutes les notations ``Eraser`` du fichier par ``sobriete67``.
+
+[.text-jutify]
+Ce programme permet de vérifier que le programme traite bien tous les cas donnés. +
+ +
+
+[.text-justify]
+Le fichier ``testAnalyse.java`` du répertoire ``~/src/analyse`` permet d'obtenir les temps d'exécution du programme en fonction de chaînes générées aléatoirement de tailles données.
+
+
+==== Reproductibilité
+[.text-justify]
+Lancer le code de ``EraserTest.java``et vérifier que le programme traite tous les cas donnés.
+
+[.text-justify]
+Lancer le code de ``testAnalyse.java`` et analyser les temps d'exécution en fonction des différentes tailles des chaînes de caractères pour la partie "TEST DU PROGRAMME sobriete67 (temps)", ainsi que les ressources mémoires pour la partie "TEST DU PROGRAMME sobriete67 (mémoire)".
+
+
+==== Analyse de l'Efficacité
+[.text-justify]
+L'efficacité d'un programme peut se déterminer en fonction de sa complexité et de son temps d'exécution pour différents cas le concernant (des chaînes de caractères de tailles différentes dans le cadre du problème donné pour cette SAE).
+
+===== Tests
+[.text-justify]
+[green]#*Ce programme passe tous les tests.*#
+
+Les espaces ont été remplacés par le caractère ``_``.
+
+|===
+|*Chaînes de caractères de tests*|*Résultats*
+|``''`` (vide)|Test passed
+|``'06___07_65_19_70_'``|Test passed
+|``'666,_the_number_of_the_beast'``|Test passed
+|``'Cou_cou\__J_M__B'``|Test passed
+|``'_'``|Test passed
+|``'__'``|Test passed
+|===
+
+
+===== Temps d'exécution
+[.text-justify]
+Les temps d'exécution analysés via le programme ``testAnalyse.java`` (en millisecondes) semblent être inconstants et dépendent surtout du nombre et du placement des espaces contenus dans les chaînes de caractère données. _Les temps d'exécutions pour des chaînes même de grandes tailles restent cependant notables de par leur grande optimisation._
+
+|===
+|*Tailles des chaînes*|*Temps d'exécution*
+|1 caractère|~0.015 ms
+|10 caractères|~0.02 ms
+|100 caractères|~0.15 ms
+|1000 caractères|~1 ms
+|10000 caractères|~5 ms
+|===
+
+
+===== Complexité
+[.text-justify]
+La complexité du programme ``sobriete67.java`` semble se rapprocher de *O(log(n))*, les temps d'exécution évoluant très progressivement en fonction de la taille des chaînes données. Déterminer une complexité plus précise nécessiterait d'autres paramètres comme le nombre d'espace dans la chaîne ainsi que leur disposition.
+
+
+===== Sobriété
+[.text-justify]
+La sobriété consiste à analyser les ressources mémoires nécessaires au fonctionnement d'un programme. Les tests réalisés avec le programme ``testAnalyse.java`` sont effectués avec des chaînes de caractères de très grandes tailles, autrement les ressources nécessaires sont trop infimes pour être déterminées. Les résultats obtenu sont exprimés en megabits.
+
+|===
+|*Tailles des chaînes*|*Ressources mémoires*
+|1000 caractères|[red]#Ressources trop infimes pour être déterminées#
+|10000 caractères|~0.85 mb
+|50000 caractères|~5 mb
+|100000 caractères|~10 mb
+|===
+
+[.text-justify]
+L'algorithme ``sobriete67`` semble consommer peu de ressources même pour des chaînes de très grandes tailles.
+
+
+{empty} +
+
+=== Sobriété n°57 (c)
+
+*NOTATION*
+|===
+|[red]#*0* points#|_L'algo ne se compile pas_
+|*Total : 0* points|
+|===
+
+[.text-justify]
+[red]#Cet algorithme présente une erreur de compilation dû au manque d'import des librairies ``<stdlib.h>`` et ``<string.h>``. De ce fait il n'est pas possible d'analyser sa sobriété ni son efficacité, le rendant inclassable.#
+
+[.text-jsutify]
+*[NOTE DE L'AUTEUR]* _En vu de mes lacunes en C, je ne suis pas en mesure de faire les modifications et ajouts nécessaires pour permettre l'analyse de ce code._

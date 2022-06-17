@@ -1,6 +1,6 @@
-package solutions;
+package analyse.solutions;
 
-public class Eraser {
+public class simplicite98 {
 	
 	/*
 	 * retire tous les espaces blancs d'une chaînes de caractères sans compter les espaces blancs consécutif

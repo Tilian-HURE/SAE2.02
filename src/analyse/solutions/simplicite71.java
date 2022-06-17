@@ -1,6 +1,6 @@
-package solutions;
+package analyse.solutions;
 
-public class Eraser {
+public class simplicite71 {
     public static String erase(String str) {
         //throw new UnsupportedOperationException("Unimplemented");
         String res = "";
@@ -10,6 +10,6 @@ public class Eraser {
 				
 			}
 		}
-		return res; 
+		return res;
     }
 }

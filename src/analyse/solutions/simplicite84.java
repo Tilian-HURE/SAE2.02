@@ -1,6 +1,6 @@
-package solutions;
+package analyse.solutions;
 
-public class Eraser {
+public class simplicite84 {
 
     public static String erase(String str){
     	String result = "";

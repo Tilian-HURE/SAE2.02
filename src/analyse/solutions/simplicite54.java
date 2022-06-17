@@ -1,8 +1,10 @@
-package solutions;
+package analyse.solutions;
+
+import java.util.ArrayList;
 
 public class simplicite54 {
     public static String erase(String str) {
-        throw new UnsupportedOperationException("Unimplemented");
+        //throw new UnsupportedOperationException("Unimplemented");
         char[] temp= str.toCharArray();
 		ArrayList<Character> temp1= new ArrayList<Character>();
 	

@@ -1,8 +1,8 @@
-package solutions;
+package analyse.solutions;
 
 import java.util.ArrayList;
 
-public class Eraser2 {
+public class sobriete67 {
 
     /*  Principe de cet algorithme : On ajoute petit à petit les lettres dans une ArrayList.
         Quand un espace est rencontré, il est ignoré et la variable etaitEspace passe à true.

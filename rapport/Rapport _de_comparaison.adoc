@@ -27,6 +27,85 @@ En cas d'ex-aequo, même note. (5/5/3/2 par exemple).
 
 == Catégorie SIMPLICITÉ
 
+=== Simplicité n°29 (java)
+
+*NOTATION*
+|===
+|*5* points|*_Meilleur algorithme* de la catégorie (le plus rapide et passant tous les tests)._ *TODO*
+|===
+
+[.text-justify]
+Cet algorithme présente une efficacité satisfaisante en traitant tous les cas, avec des temps d'exécution rapides et une complexité qualifiable de linéaire. *TODO*
+
+
+==== Prérequis
+[.text-justify]
+Vérifier la présence du fichier ``simplicite54.java`` dans le répertoire ``~/src/analyse/solutions``. +
+ +
+
+[.text-justify]
+Remplacer la ligne n°7 du fichier ``EraserTest.java`` (celle avec le commentaire "replace this line") du répertoire ``~/src/test/java`` par le code suivant : +
+
+[SOURCE, java]
+----
+import analyse.solutions.simplicite54;
+----
+
+[.text-justify]
+Et remplacer toutes les notations ``Eraser`` du fichier par ``simplicite54``.
+
+[.text-jutify]
+Ce programme permet de vérifier que le programme traite bien tous les cas donnés.
+
+
+==== Reproductibilité
+[.text-justify]
+Lancer le code de ``EraserTest.java``et vérifier que le programme traite tous les cas donnés.
+
+
+==== Analyse de la simplicité
+[.text-justify]
+La simplicité d'un programme peut se déduire à partir de sa lisibilité/compréhension qui sera évaluée subjectivement pour ce rapport, et de sa qualité qui sera évaluée avec l'outil en ligne 'Codacy'. Il reste tout de même nécessaire de vérifier si le programme répond bien à sa tâche en traitant tous les cas pour les chaînes de caractères données.
+
+===== Tests
+[.text-justify]
+[green]#*Ce programme passe tous les tests.*#
+
+Les espaces ont été remplacés par le caractère ``_``.
+
+|===
+|*Chaînes de caractères de tests*|*Résultats*
+|``''`` (vide)|Test passed
+|``'06___07_65_19_70_'``|Test passed
+|``'666,_the_number_of_the_beast'``|Test passed
+|``'Cou_cou\__J_M__B'``|Test passed
+|``'_'``|Test passed
+|``'__'``|Test passed
+|===
+
+
+===== Lisibilité
+[.text-justify]
+La lisibilité est la facilité à lire et comprendre ce que le programme fait. Pour cela certains critères vont être pris en compte comme l'aération du code, le nom des variables, les commentaires, la documentation, etc.
+
+|===
+|*Points positifs*|*Points négatifs*
+|[green]#✔️# Décomposition (aération) du code|[red]#❌# Manque de documentation (javadoc)
+|[green]#✔️# Utilisation de méthodes facilement compréhensibles (``for``, ``ArrayList``, ``StringBuilder``)|[red]#❌# Manque de commentaires explicatifs
+||[red]#❌# Noms de variables implicites (``temp``, ``temp1``)
+|===
+
+
+===== Qualité
+L'outil en ligne Codacy a noté ce programme [yellow]#*D*#. Cela est principalement dû à la mauvaise utilisation de certaines clauses en java.
+
+|===
+|*Impacts*|*Points relevés par Codacy*
+|[yellow]#Moyen#|Éviter les déclarations vides dans les clauses ``if`` et ``else if``
+|[yellow]#Moyen#|Éviter de réassigner les paramètres de la fonction
+|===
+
+
 *TOCONTINUE*
 
 

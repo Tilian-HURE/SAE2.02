@@ -47,7 +47,7 @@ Difficile de ne pas craquer avec cet algorithme présentant une très bonne qual
 
 ==== Prérequis
 [.text.justify]
-Votre IDE doit être paramétré avec au minimum une JDK version 18. +
+L'IDE utilisé doit être paramétré avec au minimum une JDK version 18. +
  +
 
 [.text-justify]
@@ -131,7 +131,7 @@ Cet algorithme présente une très bonne qualité en étant facile à comprendre
 
 ==== Prérequis
 [.text.justify]
-Votre IDE doit être paramétré avec au minimum une JDK version 18. +
+L'IDE utilisé doit être paramétré avec au minimum une JDK version 18. +
  +
 
 [.text-justify]
@@ -218,7 +218,7 @@ Cet algorithme présente une très bonne qualité en étant très épuré, lége
 
 ==== Prérequis
 [.text.justify]
-Votre IDE doit être paramétré avec au minimum une JDK version 18. +
+L'IDE utilisé doit être paramétré avec au minimum une JDK version 18. +
  +
 
 [.text-justify]
@@ -304,7 +304,7 @@ Cet algorithme laisse penser qu'il n'a même pas été testé par son auteur ave
 
 ==== Prérequis
 [.text.justify]
-Votre IDE doit être paramétré avec au minimum une JDK version 18. +
+L'IDE utilisé doit être paramétré avec au minimum une JDK version 18. +
  +
 
 [.text-justify]
@@ -399,7 +399,7 @@ Cet algorithme présente une efficacité satisfaisante en traitant tous les cas,
 
 ==== Prérequis
 [.text.justify]
-Votre IDE doit être paramétré avec au minimum une JDK version 18. +
+L'IDE utilisé doit être paramétré avec au minimum une JDK version 18. +
  +
 
 [.text-justify]
@@ -489,7 +489,7 @@ Cet algorithme présente une efficacité satisfaisante en traitant tous les cas,
 
 ==== Prérequis
 [.text.justify]
-Votre IDE doit être paramétré avec au minimum une JDK version 18. +
+L'IDE utilisé doit être paramétré avec au minimum une JDK version 18. +
  +
 
 [.text-justify]
@@ -755,7 +755,7 @@ Cet algorithme présente une efficacité satisfaisante en traitant tous les cas,
 
 ==== Prérequis
 [.text.justify]
-Votre IDE doit être paramétré avec au minimum une JDK version 18. +
+L'IDE utilisé doit être paramétré avec au minimum une JDK version 18. +
  +
 
 [.text-justify]

@@ -6,8 +6,10 @@
 Réalisé par *Tilian HURÉ (4A)*
 
 [WARNING]
+====
 [.text-justify]
 Pour une meilleure lisibilité, il est recommandé d'ouvrir ce document avec un outil prenant en compte l'intégrité du markdown Asciidoc dans sa preview.
+====
 
 
 {empty} +

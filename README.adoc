@@ -4,7 +4,7 @@
 :toc: left
 :toc-title: Sommaire
 :toclevels: 1
-// Antora 
+// Antora
 // => traduction automatique fr/uk
 // => niveau de guidage
 //include:definitions.txt (glossaire des termes du BUT comme SAE)
@@ -45,7 +45,7 @@ endif::[]
 
 * LAST NAME : HURÉ
 * First name : Tilian
-* TD group : 
+* TD group :
 - [ ] 1
 - [ ] 2
 - [ ] 3
@@ -78,7 +78,7 @@ Cette SAÉ se déroule en 2 phases d'une semaine chacune.
 
 === Phase 1 : concours d'algorithme
 
-Vous allez devoir soumettre un algorithme qui résout un problème simple mais qui peut se régler avec plusieurs solutions différentes. 
+Vous allez devoir soumettre un algorithme qui résout un problème simple mais qui peut se régler avec plusieurs solutions différentes.
 Vous avez une semaine (3 séances de TP non encadrées) pour réaliser et soumettre votre (ou vos) solutions.
 
 Le problème est le suivant :
@@ -140,12 +140,12 @@ Vous utiliserez le dépôt initial qui vous aura été attribué via classroom p
 |=============================================================================================================
 | #    | lien                                                                          | langage  | catégorie
 | 1    | link:src/main/java/eraser/Eraser.java[ici]                                    | Java     | Efficacité
-| 2    | https://github.com/IUT-Blagnac/sae2-02-Tilian-HURE/blob/main/solution.py[là]  | Python   | Efficacité     
+| 2    | https://github.com/IUT-Blagnac/sae2-02-Tilian-HURE/blob/main/solution.py[là]  | Python   | Efficacité
 |=============================================================================================================
 
 === Phase 2 (deadline : **vendredi 16 juin** à minuit)
 
-* [ ] Le rapport d'évaluation des algorithmes (e.g., jupyter, asciidoc ou PDF). Pour chaque catégorie, vous devrez désigner qui est 1er, 2ème, 3ème, ... (avec possibilité d’ex-aequo si le hasard vous a attribué des algos similaires). Il doit se trouver dans le répertoire `rapport` de votre dépôt.
+* [ ] Le rapport d'évaluation des algorithmes (e.g., jupyter, asciidoc ou PDF) *retrouvable* https://github.com/IUT-Blagnac/sae2-02-Tilian-HURE/blob/main/rapport/Rapport%20_de_comparaison.adoc[ici]. Pour chaque catégorie, vous devrez désigner qui est 1er, 2ème, 3ème, ... (avec possibilité d’ex-aequo si le hasard vous a attribué des algos similaires). Il doit se trouver dans le répertoire `rapport` de votre dépôt.
 * [ ] Les codes de test, d'évaluation ou de mesure. Ils doivent se trouver dans le répertoire `analyse` de votre dépôt.
 * [ ] Les références des librairies/outils utilisés (pour ceux non fournis). Elles doivent être listées dans la sous-section (Références) ci-dessous.
 * [ ] La chaîne de compilation et exécutable, ou paquetage selon les standards du langage (comment exécuter vos codes d'évaluation). Cette description doit se r

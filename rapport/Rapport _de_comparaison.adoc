@@ -292,10 +292,10 @@ L'outil en ligne Codacy a noté ce programme [green]#*B*#. Cela est seulement d�
 
 *NOTATION*
 |===
-|*+4* points|*_4e (et dernier) meilleur algorithme* de la catégorie (qualité moyenne, assez lisible)._
+|*+2* points|*_4e (et dernier) meilleur algorithme* de la catégorie (qualité moyenne, assez lisible)._
 |[red]#*-1* points#|_L’algo ne passe pas tous les tests fournis._
 |[red]#*-1* points#|_L’algo contient plusieurs oublis nuisant à sa compilation._
-|*Total : 2* points|
+|*Total : 0* points|
 |===
 
 [.text-justify]
